@@ -6,12 +6,16 @@ public class Exercise {
     private String description;
     private ExerciseType type;
     private boolean unilateral = false;
-    private double PRweight;
-    private int PRreps;
-    private List<Entry> history = new ArrayList<>();
+    private History history;
+
+    public Exercise(){}
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getName() {
+        return name;
     }
 
     public void setDescription(String description) {
@@ -26,11 +30,5 @@ public class Exercise {
         this.unilateral = unilateral;
     }
 
-    public double getPRweight() {
-        return PRweight;
-    }
 
-    public int getPRreps() {
-        return PRreps;
-    }
 }

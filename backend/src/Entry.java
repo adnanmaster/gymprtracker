@@ -1,5 +1,7 @@
 public class Entry {
     private String date;
     private int reps;
-    private int weight;
+    private int weight = 0;
+
+
 }
