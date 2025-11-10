@@ -7,10 +7,20 @@ public class ExerciseRepo {
     public ExerciseRepo(){}
 
     public void addExercise(Exercise newExercise){
-        repo.put(newExercise.getName(), newExercise);
+
+        String newName = newExercise.getName();
+//        if(checkForDuplicates(newExercise)){
+//            newName = newName + "1";
+//        }
+        repo.put(newName, newExercise);
     }
 
-    public void checkForDoubles(){
-
-    }
+//    public boolean checkForDuplicates(Exercise newExercise){
+//        boolean duplicate = false;
+//        for(String key : repo.keySet()){
+//            if(key.equals(newExercise.getName())){
+//                duplicate = true;
+//            }
+//        }
+//    }
 }

@@ -1,6 +1,3 @@
-import java.util.ArrayList;
-import java.util.List;
-
 public class Exercise {
     private String name;
     private String description;
@@ -22,13 +19,27 @@ public class Exercise {
         this.description = description;
     }
 
+    public String getDescription() {
+        return description;
+    }
+
     public void setType(ExerciseType type) {
         this.type = type;
+    }
+
+    public ExerciseType getType() {
+        return type;
     }
 
     public void setUnilateral(boolean unilateral) {
         this.unilateral = unilateral;
     }
 
+    public boolean getUnilateral(){
+        return unilateral;
+    }
 
+    public History getHistory() {
+        return history;
+    }
 }
