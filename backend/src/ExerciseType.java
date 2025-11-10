@@ -1,6 +1,6 @@
 public enum ExerciseType {
     MACHINE,
-    DUMBELL,
+    DUMBBELL,
     BARBELL,
     CABLE
 }
